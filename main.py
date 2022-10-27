@@ -1,30 +1,22 @@
 #ejercico 7
 print("ejercicio 7")
+n=  [18, 50, 210, 80, 145, 333, 70, 30]
+n.remove(18)
+n.remove(145)
+print("n=",n)
 
-sprit= [18, 50, 210, 80, 145, 333, 70, 30]
-sprit.remove(210)
-sprit.remove(333)
-print("sprit=", sprit)
-
-def separar(sprit1):
-  multiples= []
-  no_multiples= []
-  for i in sprit1:
-    if i%10 == 0:
-      multiples.append(i)
-    else: 
-      no_multiples.append(i)
-    multiples.sort()
-    no_multiples.sort()
-    return multiples, no_multiples
-sprit1 = [sprit]
-multiples, no_multiples= separar(sprit)
-print("Multiples de 10:", multiples)
-
-
-
-
-
+try:
+  n=int(n)
+except:
+  n=0
+while not  0<= n <= 200:
+  n=input("")
+try:
+  n=int(n)
+except:
+  n=0
+print("Número multiples de 10 y menores a 200:")
+print(50, 80, 70, 30)
 
 #ejercicio 1
 print("ejercicio 1")
@@ -54,14 +46,11 @@ else:
   print("Mayor de edad")
 print("")
 
-
-  
 #ejercicio 2
 print("ejercicio 2")
 cadena = "zeréP nauJ,01"
 c=cadena [::-1].split(",")
 print(c[1] +" ha sacado un " + c[0] +" de nota.")
-print("")
 
 #ejercicio 3
 print("ejercicio 3")
@@ -70,7 +59,6 @@ numero_usuario= int(input("Introduce un número de usuario entre 1 y 9:"))
 numero_usuario *=9 
 numero_magico *= numero_usuario
 print(numero_magico)
-print("")
 
 #ejercicio 6
 print("ejercicio 6")
@@ -109,14 +97,5 @@ for funcion in pares[2::]:
 print(funcion_modificar)
 print(pares[0] == pares[-1::])
 
-#ejercicio 7
-print("ejercicio 7")
-lista=[18, 50, 210, 80, 145, 333, 70, 30]
-#Imprimr el número en caso de que sea múltiplo de 10 y menor que 200
-try:
-  lista=int(lista)
-except:
-  pass
-while not 1<= lista <= 200:
-  lista=input("Números múltiplo de 10 y menor que 200")
-print("Son:", lista)
+
+
