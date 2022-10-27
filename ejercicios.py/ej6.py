@@ -17,9 +17,9 @@ def separar(funcion_modificar1):
     pares.sort()
     impares.sort()
     return pares, impares
-  funcion_modificar1 = [funcion_modificar]
-  pares,impares= separar(funcion_modificar)
-  print("Pares:", pares)
+funcion_modificar1 = [funcion_modificar]
+pares,impares= separar(funcion_modificar)
+print("Pares:", pares)
 
 suma_funcion=0
 for funcion_modificar1 in funcion_modificar:
