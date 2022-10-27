@@ -1,9 +1,25 @@
-#ejercicio 7
+#ejercico 7
 print("ejercicio 7")
-funcion= [18, 50, 210, 80, 145, 333, 70, 30]
-def recorrido(n, multiplo):
-  return n%multiplo == 0
-  
+
+sprit= [18, 50, 210, 80, 145, 333, 70, 30]
+sprit.remove(210)
+sprit.remove(333)
+print("sprit=", sprit)
+
+def separar(sprit1):
+  multiples= []
+  no_multiples= []
+  for i in sprit1:
+    if i%10 == 0:
+      multiples.append(i)
+    else: 
+      no_multiples.append(i)
+    multiples.sort()
+    no_multiples.sort()
+    return multiples, no_multiples
+sprit1 = [sprit]
+multiples, no_multiples= separar(sprit)
+print("Multiples de 10:", multiples)
 
 
 
